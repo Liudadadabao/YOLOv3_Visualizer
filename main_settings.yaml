@@ -1,0 +1,19 @@
+
+Use_GPU: True
+
+GPU_ID: 0
+
+Camera_ID: 0
+
+caffevis_caffe_root: "/home/NN_Analyzer/anaconda3/envs/gpucaffe/bin"
+#/home/demo_baetz/deepvis_demo/caffe"
+
+
+# Paths to the yaml setting file of the models
+# example:
+# model_A : /path/to/the/setting/file/of/model_A
+Model_config_path:
+  #Icons: "./model_icons_settings.yaml"
+  #Simpsons: "./model_simpsons_settings.yaml"
+  #Caffenet_yos: "./model_caffenet_settings.yaml"
+  yolov3: '/home/NN_Analyzer/YOLOv3_visualizer/model_yolov3_settings.yaml' #"./model_yolov3_settings.yaml"

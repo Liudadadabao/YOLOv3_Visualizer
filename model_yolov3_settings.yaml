@@ -1,0 +1,46 @@
+# ===============================================================================
+# Settings for the visualizer
+
+# necessary settings
+# ------------------
+network_weights: "./Models/yolo_v3/yolov3.caffemodel"
+
+prototxt: "./Models/yolo_v3/yolov3m.prototxt"
+
+label_file: "./Models/yolo_v3/coco.names"
+
+channel_swap: [2, 1, 0]
+# ------------------
+
+# optional settings
+# -----------------
+input_image_path: "./Models/yolo_v3/images"  # pre-selected input images for demostration
+
+deepvis_outputs_path: "./Models/yolo_v3/top_images" # Top 9 images and the deconv-norm of them
+
+# mean: [103.939, 116.779, 123.68]
+# -----------------
+# ===============================================================================
+
+# =======================
+# settings for find_maxes
+# =======================
+max_tracker_batch_size: 1
+
+data_dir: "/home/NN_Analyzer/trainval"
+
+layers_to_output_in_offline_scripts: ['Concat228']  # specify the layers to work on
+#['Eltwise12', 'Eltwise22', 'Eltwise29', 'Eltwise39', 'Eltwise46', 'Eltwise53', 'Eltwise60', 'Eltwise67', 'Eltwise74', 'Eltwise81', 'Eltwise88', 'Eltwise98', 'Eltwise105', 'Eltwise112', 'Eltwise119', 'Eltwise126', 'Eltwise133', 'Eltwise140', 'Eltwise147',
+#'Concat203', 'Concat228']  specify the layers to work on
+
+N: 9  # out put the top N images results
+
+
+search_min: false
+
+# crop_max_patxhes.py options
+max_tracker_do_maxes: true
+max_tracker_do_deconv: false
+max_tracker_do_deconv_norm: false
+max_tracker_do_backprop: false
+max_tracker_do_backprop_norm: false

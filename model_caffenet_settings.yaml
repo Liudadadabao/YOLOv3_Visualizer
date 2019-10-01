@@ -1,0 +1,23 @@
+# ===============================================================================
+# Settings for the visualizer
+
+# necessary settings
+# ------------------
+network_weights: "./Models/caffenet-yos/caffenet-yos-weights"
+
+prototxt: "./Models/caffenet-yos/caffenet-yos-deploy.prototxt"
+
+label_file: "./Models/caffenet-yos/ilsvrc_2012_labels.txt"
+
+channel_swap: [2, 1, 0]
+# ------------------
+
+# optional settings
+# -----------------
+input_image_path: "./Models/caffenet-yos/input_images"  # pre-selected input images for demostration
+
+
+# mean: [103.939, 116.779, 123.68]
+# -----------------
+# ===============================================================================
+
