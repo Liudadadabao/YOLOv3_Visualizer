@@ -11,6 +11,7 @@ The code of [the improved version](https://github.com/x1155665/CNN-Visualizer) b
 ## Features
 Main features of the Deep Visualization Toolbox that are implemented in the CNN Visualizer:
  * Object detection result
+ ![image](https://github.com/Liudadadabao/YOLOv3_Visualizer/blob/master/YOLOvis_results.png)
  * Activation of each neuron
  * Images that cause high activation (These images are pre-computed by the scripts in _./find_maxes/_)
  * Channels that output high activation to a certain object
