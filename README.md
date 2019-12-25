@@ -15,6 +15,7 @@ Main features of the Deep Visualization Toolbox that are implemented in the CNN 
  * Images that cause high activation (These images are pre-computed by the scripts in _./find_maxes/_)
  * Channels that output high activation to a certain object
  * Table of detected objects and their confidence
+ ![image](https://github.com/Liudadadabao/YOLOv3_Visualizer/blob/master/YOLO_demo.png)
  
 Missing feature:
  * Synthetic images that cause high activation
